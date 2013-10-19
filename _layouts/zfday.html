@@ -7,7 +7,7 @@
 <head>
   <meta charset="utf-8" />
 
-  <title>Zend Framework Day - Milano 7 Feb. 2014</title>
+  <title>{{ page.title }} - {{ page.conf_data }}</title>
 
   <!-- Responsive and mobile friendly stuff -->
   <meta name="HandheldFriendly" content="True">
@@ -48,10 +48,10 @@
         <a name="top"></a>
         <nav id="site_nav">
           <ul class="container">
-            <li><a href="#top" title="">Zend Framework Day</a></li>
+            <li><a href="#top" title="{{ page.title }}">{{ page.title }}</a></li>
             <li><a href="#info" title="">La conferenza</a></li>
-            <li><a href="#cfp" title="">Call for paper</a></li>
-            <!--li><a href="#programma" title="">Programma</a></li-->
+            {% if page.cfp %} <li><a href="#cfp" title="">Call for paper</a></li> {% endif %}
+            {% if page.speakers %} <li><a href="#programma" title="">Programma</a></li> {% endif %}
             <li><a href="#location" title="">La location</a></li>
             <li><a href="#sponsor" title="">Gli sponsor</a></li>
           </ul>
@@ -74,8 +74,8 @@
             <img src="/img/confs/zfday/zf2_logo.png" alt="Zend Framwork 2" />
           </div>
           <div class="event_name column_8">
-            <h1 id="fittext1">Zend Framework <em>DAY</em></h1>
-            <h2 id="fittext2">Torino, 7 Feb. 2014</h2>
+            <h1 id="fittext1">{{ page.title }}</h1>
+            <h2 id="fittext2">{{ page.conf_data }}</h2>
           </div>
           <div class="clear"></div>
         </div>
