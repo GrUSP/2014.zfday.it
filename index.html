@@ -6,6 +6,7 @@ conf_data: "Torino, 7 Feb. 2014"
 cfp: true
 speakers: false
 cfs: true
+where: i3p-to
 ---
 
 {% include section-newsletter.html %}	
@@ -14,5 +15,7 @@ cfs: true
 {% if page.cfp %} {% include section-cfp.html %} {% endif %}
 {% if page.speakers %} {% include section-speakers.html %} {% endif %}
 
-{% include section-contacts-i3p.html %}	
+{% capture place %}{{'where/'}}{{page.where}}{{'.html'}}{% endcapture %}
+
+{% include places/i3p-to.html %}	
 {% include section-sponsors.html %}	
