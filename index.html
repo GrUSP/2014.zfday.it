@@ -1,18 +1,20 @@
 ---
 layout: zfday
-title: ZendFramework <em>Day</em>
-ttl: ZendFrameworkDay 2014
+title: ZendFramework Day
+ttl: ZendFramework <em>Day</em> 2014
 conf_data: "Torino, 7 Feb. 2014"
 cfp: true
 speakers: false
 cfs: true
 where: i3p-to
+tickets: true
 ---
 
 {% include section-newsletter.html %}	
-
 {% include section-contents.html %}	
+
 {% if page.cfp %} {% include section-cfp.html %} {% endif %}
+{% if page.tickets %} {% include section-tickets.html %} {% endif %}
 {% if page.speakers %} {% include section-speakers.html %} {% endif %}
 
 {% capture place %}{{'where/'}}{{page.where}}{{'.html'}}{% endcapture %}
