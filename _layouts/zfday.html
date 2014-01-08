@@ -7,7 +7,7 @@
 <head>
   <meta charset="utf-8" />
 
-  <title>{{ page.ttl }} - {{ page.conf_data }}</title>
+  <title>{{ page.title }} - {{ page.conf_data }}</title>
 
   <!-- Responsive and mobile friendly stuff -->
   <meta name="HandheldFriendly" content="True">
@@ -48,12 +48,13 @@
         <a name="top"></a>
         <nav id="site_nav">
           <ul class="container">
-            <li><a href="#top" title="{{ page.title }}">{{ page.title }}</a></li>
+            <li><a href="#top" title="{{ page.title }}">{{ page.ttl }}</a></li>
             <li><a href="#info" title="">La conferenza</a></li>
             {% if page.cfp %} <li><a href="#cfp" title="">Call for paper</a></li> {% endif %}
-            {% if page.tickets %} <li><a href="#tickets" title="">Registrati</a></li> {% endif %}
             {% if page.programma %} <li><a href="#programma" title="">Programma</a></li> {% endif %}
-            {% if page.speaker %} <li><a href="#speaker" title="">Speaker</a></li> {% endif %}
+            {% if page.speaker %} <li><a href="#speaker" title="">Speaker</a></li> {% endif %} 
+            {% if page.workshop %} <li><a href="#workshop" title="">Workshop</a></li> {% endif %}
+            {% if page.tickets %} <li><a href="#tickets" title="">Registrati</a></li> {% endif %}
             <li><a href="#location" title="">La location</a></li>
             <li><a href="#sponsor" title="">Gli sponsor</a></li>
           </ul>
@@ -76,7 +77,7 @@
             <img src="/img/confs/zfday/zf2_logo.png" alt="Zend Framwork 2" />
           </div>
           <div class="event_name column_8">
-            <h1 id="fittext1">{{ page.ttl }}</h1>
+            <h1 id="fittext1">{{ page.title }}</h1>
             <h2 id="fittext2">{{ page.conf_data }}</h2>
           </div>
           <div class="clear"></div>
