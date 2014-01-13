@@ -29,8 +29,6 @@ body {
 	background: transparent url(../img/noise.png) repeat;
 }
 
-
-
 /* FONTS ============================================================================= */
 h1, h2, h3, #schedule thead th, .legend dd.event_location, .btn, #site_nav ul li{
 	font-family: 'Exo', sans-serif;
@@ -260,14 +258,15 @@ html {
 
 
 /* Site_Header */
-#main_navigation{
-	background: transparent url(../img/bg_trangles_top.png) repeat-x center bottom;
-	padding-bottom: 14px;
-}
 #site_nav{
-	background: transparent url(../img/bg_repeat_gray.png) repeat;
+	background-color: #3d7231;
 	padding-top: 10px;
 	margin: 0;
+    height: 35px;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    z-index: 400;
 }
 
 #site_nav ul{
@@ -302,6 +301,7 @@ html {
 
 #site_header{
 	text-align: center;
+    padding-top: 40px;
 }
 
 .grusp_header{
@@ -573,8 +573,15 @@ a:hover.slides{
 }
 
 
+#speakers td {
+	vertical-align: top;
+	text-align: left;
+}
 
-
+#speakers tr {
+	height: 200px;
+}
+	
 /* map */
 .map{
 	margin-bottom: 60px;
@@ -920,4 +927,11 @@ a#back_top:hover {
 		margin-top: 5px;
 	}
 
+}
+
+
+.circular {
+    border-radius: 150px;
+    height: 150px;
+    width: 150px;
 }

@@ -1,9 +1,93 @@
 <a name="programma"></a>
 <section class="alpha_24">
   <div class="container group">
+  	<div class="column_8 centered">
       <h3 class="center">Il programma</h3>
-      <p align="center">A breve il programma della conferenza</p>
-  </div>
+      
 
-  <div class="separator"></div>
+  		<table id="schedule" border="0" cellspacing="0" cellpadding="0">
+      	<tr class="common_event">
+          	<td class="time">09:00 &ndash; 09:30</td>
+          	<td><h4><a href="#" title="">Check-in</a></h4></td>
+      	</tr>
+      	<tr class="common_event">
+          	<td class="time">09:30 &ndash; 10:00</td>
+          	<td><h4><a href="#" title="">Introduzione GrUSP e PUG Torino</a></h4></td>
+      	</tr>
+      	<tr class="common_event">
+         	<td class="time">10:00 &ndash; 10:20</td>
+          	<td>
+              <h4>Le novità ed il futuro di Zend Framework 2</h4>
+              di <a href="#zimuel" title="Enrico Zimuel">Enrico Zimuel</a><br />
+              <p>Le novità dell'ultima versione di Zend Framework 2 ed il futuro di questo framework di sviluppo.</p>
+          	</td>
+      	</tr>
+      	<tr class="break">
+      		<td class="time">10:20 &ndash; 10:40</td>
+				<td>
+					<h4><strong>Coffee break</strong></h4>
+				</td>
+			</tr>
+      	<tr class="common_event">
+          	<td class="time">10:40 &ndash; 11:25</td>
+          	<td>
+              <h4>C'è un modulo ZF2 per tutto!</h4>
+              di <a href="#arbezzano" title="Gianluca Arbezzano">Gianluca Arbezzano</a><br />
+              <p>I moduli di ZF2 sono un'arma potente per lo sviluppo di applicazioni web. Nella community ZF2 esistono migliaia di moduli per la maggior parte delle esigenze. In questo talk vedremo come ricercare, utilizzare e implementare moduli in ZF2. Presenteremo alcune logiche per sviluppare moduli riutilizzabili (Eventi, Service Manager in primis) e per sovrascrivere view, controller e servizi. Vedremo anche come mettere il proprio modulo a disposizione della community con consigli su come renderlo più user friendly (Travis-CI, Composer, Documentazione).</p>
+          	</td>
+      	</tr>
+			<tr class="common_event">
+         	<td class="time">11:30 &ndash; 12:15</td>
+          	<td>
+              <h4>Gestione degli errori e dei log con ZF2</h4>
+              di <a href="#maraspin" title="Steve Maraspin">Steve Maraspin</a><br />
+              <p>Quando un'applicazione riscuote successo, è fondamentale rendersi subito conto di eventuali problemi. Un disservizio, anche di breve durata, può causare perdite - economiche e d'immagine - anche ingenti. Per offrire una buona esperienza utente, è anche fondamentale fornire agli utenti feedback chiaro e comprensibile. In questo talk condividerò la mia esperienza nella gestione degli errori, sia per quanto riguarda la comunicazione dell'errore all'utente, sia soprattutto parlando di logging e mailing al team di sviluppo. Mostrerò come sfruttare l'architettura event driven di ZF2 per minimizzare l'accoppiamento e aumentare la coesione a livello architetturale, con gli ovvii benefici in termini di manutenibilità ed estensibilità dell'applicazione sviluppata.</p>
+          	</td>
+      	</tr>
+      	<tr class="common_event">
+          	<td class="time">12:20 &ndash; 13:05</td>
+          	<td>
+              <h4>Autenticazione e permessi con ZF2 senza fatica</h4>
+              di <a href="#maraspin" title="Steve Maraspin">Stefano Valle</a><br />
+              <p>La maggior parte delle applicazioni web ha la necessità di gestire le autorizzazioni per gli utenti, spesso con diversi livelli di granularità. Implementare le cosiddette liste di accesso (o Access Control List, ACL) in modo efficace e sicuro è tuttavia un compito tutt'altro che banale, soprattutto se consideriamo l'impatto sulla sicurezza e l'alto grado di accoppiamento che un simile componente porta con se, e quindi le relative conseguenze a livello architetturale. In questo talk mostrerò come creare un'applicazione che affronta il problema delle ACL in maniera completa con Zend Framework 2, sfruttando anche alcuni moduli già esistenti.</p>
+          	</td>
+      	</tr>
+      	<tr class="break lunch">
+				<td class="time">13:05 &ndash; 14:05</td>
+				<td><h4><strong>Pranzo</strong></h4></td>
+			</tr>
+			<tr class="common_event">
+          	<td class="time">14:10 &ndash; 14:55</td>
+          	<td>
+              <h4>Sviluppo di API RESTful (e RPC) in ZF2 con Apigility</h4>
+              di <a href="#zimuel" title="Enrico Zimuel">Enrico Zimuel</a><br />
+              <p>Apigility è un progetto open source per la creazione di API RESTful (e RPC) in PHP. Tramite Apigility è possibile realizzare API per qualsiasi applicazione web in PHP (non solo in ZF2). Utilizzando un'interfaccia di amministrazione web based è possibile configurare ed attivare le proprie API in formato JSON complete di autenticazione (HTTP Basic e Digest, OAuth2), gestione degli errori, versioning, filtro, validazione e generazione automatica della documentazione. In questo talk verranno presentate le funzionalità di Apigility, con un esempio per la creazione di un'API RESTful per un progetto in ZF2.</p>
+          	</td>
+      	</tr>
+      	<tr class="common_event">
+          	<td class="time">15:00 &ndash; 15:45</td>
+          	<td>
+              <h4>Costruire il proprio (micro) framework con ZF2</h4>
+              di <a href="#dalmut" title="Walter Dal Mut">Walter Dal Mut</a><br />
+              <p>Zend Framework 2 è un framework di sviluppo general purpose che può essere applicato in diversi ambiti di sviluppo web. Il framewrok offre una serie di funzionalità di base che possono essere utilizzare per costruire il proprio "framework" a seconda delle proprie specifiche necessità. Componenti come il Service Locator, il sistema di Routing, il gestore degli eventi (Event Manager) possono essere utilizzati come elementi di base per la costruzione della propria applicazione. In questo talk verranno presentati gli elementi di base di ZF2 che possono essere combinati insieme per la costruzione di una architettura web personalizzata.</p>
+          	</td>
+      	</tr>
+      	<tr class="common_event">
+          	<td class="time">15:50 &ndash; 16:35</td>
+          	<td>
+              <h4>Behavioral Driven Development con ZF2</h4>
+              di <a href="#contavalli" title="David Contavalli">David Contavalli</a><br />
+              <p>Il BDD è una metodologia di sviluppo iterativa e basata su specifiche concrete, descritte attraverso esempi. Utilizzandola si riescono a definire criteri di validazione non ambigui e immediatamente fruibili, non solo in fase di accettazione, ma anche di sviluppo. Vengono così facilitati la comunicazione e il dialogo, attraverso un linguaggio che è comune per tutti gli attori coinvolti nel processo di sviluppo. Behat è lo standard de facto per il BDD in PHP. In questo talk ne introdurrò il funzionamento e le peculiarità. Andrò quindi a farne uso nell'ambito di un progetto basato su ZF2, chiamando in causa anche PHPSpec, uno strumento che sta incontrando crescente popolarità per lo SpecBDD, ovvero il TDD nell'ambito del BDD.</p>
+          	</td>
+      	</tr>
+      	<tr class="common_event">
+          	<td class="time">16:40 &ndash; 17:00</td>
+          	<td>
+              <h4>Chiusura e ringraziamenti</h4>
+          	</td>
+      	</tr>
+   	</table>
+	  </div>
+	</div>
+   <div class="separator"></div>
 </section>
